@@ -13,10 +13,10 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 // daftar model Gemini
 const geminiModels = {
-  text: "gemini-1.5-flash", // untuk teks
-  image: "gemini-1.5-flash", // multimodal (gambar + teks)
-  audio: "gemini-1.5-flash", // sementara untuk audio
-  pdf: "gemini-1.5-flash", // untuk dokumen PDF
+  text: "gemini-2.5-flash-lite", // untuk teks
+  image: "gemini-2.5-flash", // multimodal (gambar + teks)
+  audio: "gemini-2.5-flash", // sementara untuk audio
+  pdf: "gemini-2.5-flash-lite", // untuk dokumen PDF
 };
 
 // middleware
@@ -182,3 +182,4 @@ const port = 3000;
 app.listen(port, () => {
   console.log(`🚀 Server jalan di http://localhost:${port}`);
 });
+
